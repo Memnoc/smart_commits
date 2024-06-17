@@ -51,4 +51,4 @@ You also need a `.env` file in the root of your project with two API keys:
 `OPENAI_API_KEY={yourkey}`
 `GITHUB_API_KEY={yourkey}`
 
-The key gets loaded in the application and allow both OpenAI and Github to perform their checks. test
+The key gets loaded in the application and allow both OpenAI and Github to perform their checks.
