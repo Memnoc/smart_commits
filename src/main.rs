@@ -20,7 +20,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .expect("Could not find a repository in this location or any parent directory");
 
     let commit_message = suggest_commit_message(&client, &repo, &openai_key).await?;
-    println!("Suggested Commit Message: {}", commit_message);
+    println!("AI commit: {}", commit_message);
 
     Ok(())
 }
