@@ -6,7 +6,7 @@ use git::diff::get_last_commit_diff;
 
 use git2::Repository;
 use reqwest::Client;
-use serde::{Deserialize, Serialize};
+// use serde::{Deserialize, Serialize};
 use std::env;
 
 #[tokio::main]

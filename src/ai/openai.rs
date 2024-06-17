@@ -1,6 +1,6 @@
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
-use std::env;
+// use std::env;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct OpenAIRequest {
