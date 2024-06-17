@@ -1,0 +1,17 @@
+[package]
+name = "smart_commit"
+version = "0.1.0"
+edition = "2021"
+
+[lint.rust]
+unsafe_code = "forbid"
+# unused = "allow"
+
+[dependencies]
+git2 = "0.19.0"
+reqwest = { version = "0.12.4", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.117"
+clap = { version = "4.5.7", features = ["derive"] }
+dotenv = '0.15.0'

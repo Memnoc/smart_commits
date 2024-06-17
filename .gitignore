@@ -1,0 +1,19 @@
+# Compiled files
+/target/
+
+# Backup files
+**/*.bk
+
+# Ignore .env to keep secrets safe
+.env
+
+# Ignore Vim temporary files
+*.swp
+*.swo
+
+# Ignore files related to your editor/IDE
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
