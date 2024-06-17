@@ -46,30 +46,9 @@ The alias allow us to run the tool with the following command:
 
 `git commit-suggest`
 
-To be able to run the implementation (for now) you need a script to point at the repository:
-
-```
-#!/bin/bash
-
-# Ensure the .env file is loaded
-# export $(grep -v '^#' .env | xargs)
-
-# Print environment variables to verify they are loaded
-# echo "OPENAI_API_KEY: $OPENAI_API_KEY"
-
-# Execute the Rust binary
-MESSAGE=$(~/path to your project/target/release/smart_commit)
-if [ -z "$MESSAGE" ]; then
-	echo "No commit message generated."
-	exit 1
-else
-	git commit -m "$MESSAGE"
-fi
-```
-
 You also need a `.env` file in the root of your project with two API keys:
 
 `OPENAI_API_KEY={yourkey}`
 `GITHUB_API_KEY={yourkey}`
 
-The key gets loaded in the application and allow both OpenAI and Github to perform their checks.
+The key gets loaded in the application and allow both OpenAI and Github to perform their checks. test
